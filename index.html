@@ -1,222 +1,218 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<html lang="en">
 <head>
-	<title>Welcome To My Portofilo</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+  <title>Reem Samy Mustafa - Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body.dark-mode {
+      background: #111;
+      color: #eee;
+    }
+    .skills-bar {
+      background: #ddd;
+      border-radius: 20px;
+      margin: 8px 0;
+      height: 15px;
+      overflow: hidden;
+    }
+    .skills-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #007bff, #00c6ff);
+      width: 0;
+      border-radius: 20px;
+      transition: width 2s ease;
+    }
+    .card {
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 15px 0;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .dark-mode .card {
+      background: #222;
+      color: #eee;
+    }
+    .toggle-btn {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #007bff;
+      color: white;
+    }
+  </style>
 </head>
-
 <body class="is-preload">
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+  <button class="toggle-btn" onclick="toggleDarkMode()">🌗 Dark Mode</button>
 
-		<!-- Header -->
-		<header id="header">
-			<div class="logo">
-				<span  class="icon fa-image"></span>
-			</div>
-			<div class="content">
-				<div class="inner">
-					<h1>Reem Samy Mustafa</h1>
-					<p>Afully Information That you Want to Know<a href="https://www.linkedin.com/in/reemsamy"> about me</a><br />
-						
-				</div>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="#intro">Education</a></li>
-					<li><a href="#Skills">Skills</a></li>
-					<li><a href="#work">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#Experiences">Experiences & Volunteering</a></li>
-				</ul>
-			</nav>
-		</header>
+  <!-- Wrapper -->
+  <div id="wrapper">
 
-		<!-- Main -->
-		<div id="main">
+    <!-- Header -->
+    <header id="header">
+      <div class="logo">
+        <span class="icon fa-user"></span>
+      </div>
+      <div class="content">
+        <div class="inner">
+          <h1 data-aos="fade-up">Reem Samy Mustafa</h1>
+          <h2 class="typing"></h2>
+          <p data-aos="zoom-in">
+            <a href="https://www.linkedin.com/in/reemsamy" target="_blank">Connect with me</a>
+          </p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#intro">Education</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#work">Projects</a></li>
+          <li><a href="#Experiences">Experiences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-			<!-- Intro -->
-			<article id="intro">
-				<h2 class="major">ITI</h2>
+    <!-- Main -->
+    <div id="main">
 
-				<p>9-Month Diploma Information Technology Institute (ITI), Ministry of Communications and Information
-					Technology (MCIT) <a href="#work">Professional Web Development &BI</a>.</p>
-				<p>2022 /2023 </p>
-				<h2 class="major">BIS</h2>
-				<!-- <span class="image main"><img src="images/pic01.jpg" alt="" /></span> -->
-				<p>Bacholar of Business Information System <a href="#work">Major Information Technoloy</a>.</p>
-				<p>2018 /2022 </p>
-				<p>Excellent with honor</p>
-				<p>GPA: 3.8</p>
-			</article>
+      <!-- Intro -->
+      <article id="intro">
+        <h2 class="major">Education</h2>
+        <div class="card" data-aos="fade-right">
+          <h3>Information Technology Institute (ITI)</h3>
+          <p>9-Month Diploma – Professional Web Development & BI<br>2022 – 2023</p>
+        </div>
+        <div class="card" data-aos="fade-left">
+          <h3>Bachelor of Business Information System (BIS)</h3>
+          <p>Tanta University, GPA: 3.87, Excellent with honor<br>2018 – 2022</p>
+        </div>
+      </article>
 
-			<!-- Work -->
-			<article id="work">
-				<h2 class="major">Projects</h2>
-				<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
-				<p><h3>HR Tool</h3>
-					.Net | API | Sql Server | Angular | Entity Framework | C#</p>
-				<p><h3>Bug-Tracking-System</h3>
-					.Net | API | Sql Server | Angular | Entity Framework | C#</p>
-				<p><h3>School System</h3>
-					.Net | API | Sql Server | Angular | Entity Framework | C#</p>
-				<p><h3>Nursery-System</h3>
-					Node JS | Mongo Db | Stored Procedures</p>
-				<p><h3>Warehouse-System</h3>
-					Desktop Application Using C# | Entity Framework | Sql server | Stored Procedures</p>
-				<p><h3>Connect-4 Game</h3>
-					Desktop Application Using C# | .NET Framework | Threading | Filestream | TCP protocol which applies
-					socket programming</p>
-				<p><h3>Examination -System</h3>
-					Desktop Application Using C# | Entity Framework | Sql server | Stored Procedures | SSRS Tool</p>
-				<p><h3>Shooting birds Game</h3>
-					Simple shooting birds game using pure JavaScript | HTML | CSS</p>
-				<p><h3>Gifted-People</h3>
-					Website Application using (php,JS,ApI,Sql,) that helps disabledPeople to improve their lives by
-					providing them with the
-					different services inMany aspects of the lif</p>
-			</article>
+      <!-- Skills -->
+      <article id="Skills">
+        <h2 class="major">Skills</h2>
+        <h3>Programming</h3>
+        <div class="skills-bar"><div class="skills-bar-fill" data-skill="90"></div></div>
+        <h3>.NET & Backend</h3>
+        <div class="skills-bar"><div class="skills-bar-fill" data-skill="85"></div></div>
+        <h3>Frontend</h3>
+        <div class="skills-bar"><div class="skills-bar-fill" data-skill="80"></div></div>
+        <h3>Databases</h3>
+        <div class="skills-bar"><div class="skills-bar-fill" data-skill="85"></div></div>
+        <h3>BI & Cloud</h3>
+        <div class="skills-bar"><div class="skills-bar-fill" data-skill="75"></div></div>
+      </article>
 
-			<!-- About -->
-			<article id="Skills">
-				<h2 class="major">Skills</h2>
-				<!-- <span class="image main"><img src="images/Image1  (2).jpeg" alt="" /></span> -->
-				<p><p>
-					<h3>Programming Language</h3>
-					C | C++ | C# | JavaScript | Node Js
-				</p>
-					<p><h3>Concepts</h3>
-						OOP | Data Structure and Algorithms | Design Pattern</p>
-					<p><h3>Client-Side Technologies</h3>
-						HTML5 | CSS3 | Bootstrap | JQuery | ES6 | Angular</p>
-					<p><h3>Business Intelligence</h3>
-						Sql BI | Power BI | CRM | SSRS</p>
-					<p><h3>.Net</h3>
-						Entity framework | ASP.Net MVC | ASP.NET Core
-						</p>
-					<p>	<h3>Database</h3>
-						MS sqlserver | Mysql | Mongo DB</p>
-					<p>
-						<h3>version control</h3>
-					Git | GitHub | Azure
-					</p>
-					
-			</article>
+      <!-- Work -->
+      <article id="work">
+        <h2 class="major">Projects</h2>
+        <div class="card" data-aos="flip-left"><h3>HR Tool</h3><p>.NET Core | API | Angular | SQL Server</p></div>
+        <div class="card" data-aos="flip-right"><h3>Bug Tracking System</h3><p>.NET Core | Angular 16 | Azure | Power BI</p></div>
+        <div class="card" data-aos="flip-left"><h3>Camp & Locker Reservation System</h3><p>Optimized workflows at Wadi Degla S.C</p></div>
+        <div class="card" data-aos="flip-right"><h3>Event Rewarding App</h3><p>.NET Core | API | Power BI | Angular</p></div>
+        <div class="card" data-aos="flip-left"><h3>Nursery System</h3><p>Node.js | MongoDB | Stored Procedures</p></div>
+        <div class="card" data-aos="flip-right"><h3>Connect-4 Game</h3><p>C# | .NET Framework | Socket Programming</p></div>
+      </article>
 
-			<!-- Contact -->
-			<article id="contact">
-				<h2 class="major">Contact</h2>
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field half">
-							<img src="./images/Image1  (2).jpeg" alt="not aplicable">
-							<label for="name">Reem Samy Mustafa</label>
-							<label for="name">Maadi,Cairo</label>
-							<!-- <input type="text" name="name" id="name" /> -->
-						</div>
-						<div class="fields">
-							<div class="field half">
-								<label for="name">Number</label>
-								<label for="name">+20 1124422732</label>
-								<!-- <input type="text" name="name" id="name" /> -->
-							</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<label type="text" name="email" id="email" ><a href="reemsamymustafa@gmail.com">reemsamymustafa@gmail.com</a></label>
-						</div>
-						<!-- <div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="4"></textarea>
-						</div> -->
-					</div>
-					<!-- <ul class="actions">
-						<li><input type="submit" value="Send Message" class="primary" /></li>
-						<li><input type="reset" value="Reset" /></li>
-					</ul> -->
-				</form>
-				<ul class="icons">
-					<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-					<li><a href="https://www.facebook.com/reem.samyy" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="https://www.linkedin.com/in/reemsamy" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-					<li><a href="https://github.com/ReemSamy" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="https://leetcode.com/Reem-Samy/" class="icon brands fa-leetcode"><span class="label">leetcode</span>LC</a></li>
-					<li><a href="https://www.hackerrank.com/reemsamy699?hr_r=1" class="icon brands fa-hacerrank"><span class="label">hackerrank</span>HR</a></li>
-				</ul>
-			</article>
+      <!-- Experiences -->
+      <article id="Experiences">
+        <h2 class="major">Experiences & Volunteering</h2>
+        <div class="card" data-aos="fade-right">
+          <h3>Software Engineer – Wadi Degla S.C</h3>
+          <h4>2023 – Present</h4>
+          <ul>
+            <li>Developed Camp & Locker Reservation, CMS, Survey System</li>
+            <li>Automated Membership Generation process</li>
+            <li>Enhanced Wadi Degla websites security & usability</li>
+          </ul>
+        </div>
+        <div class="card" data-aos="fade-left">
+          <h3>Teaching Assistant – ITI</h3>
+          <h4>2023</h4>
+          <p>Delivered lessons and labs on .NET & Web Development</p>
+        </div>
+        <div class="card" data-aos="fade-right">
+          <h3>Back-End Developer – ACT</h3>
+          <h4>2023</h4>
+          <p>Built APIs for Maestro App & Hinkel Loyalty Points system</p>
+        </div>
+        <div class="card" data-aos="fade-left">
+          <h3>Freelance Backend Engineer</h3>
+          <h4>2020 – 2021</h4>
+          <p>Specialized in backend APIs using .NET</p>
+        </div>
+        <div class="card" data-aos="fade-right">
+          <h3>Volunteer – Enactus Egypt</h3>
+          <h4>2020 – 2021</h4>
+          <p>Assisted with coordination, problem-solving & admin tasks</p>
+        </div>
+      </article>
 
-			
-			<article id="Experiences">
-						<h2 class="major">Experiences & Volunteering</h2>
-						<p>
-							<h3>
-								ACT "Advanced Computer Technology Software Development Internship <a href="#work">Software Developer  </a></h3>
-							<h4>2022 /2023</h4> 
-						</p>
-				                <p>
-							<h3>
-								ITI "Information Technology institute <a href="#work">Teaching Assistant for .NET Track  </a></h3>
-							<h4>2022 /2023</h4> 
-				                </p>
-						<p>
-						<h3>Freelance Graphic Designer</h3>
-						<h4>Freelancer 2020 – 2021</h4>
-						
-						•Used Photoshop Software App to create professional charts and graphs for companypresentations.
-						•Determined best sizing and arrangements for projects and clients’ objectives.
-						•Researched and shared social media resources and information to facilitate graphic and
-						design process
-						</p>
-						<p>
-						<h3>Student volunteer Enactus</h3>
-						<h4>Enactus Egypt</h4>
-						•problem-solving abilities
-						•Helped coordinate operations with good administrative </p>
-						
-						
-						<h3>Student volunteer Enactus</h3>
-						<h4>2020 – 2021 Enactus Egypt</h4>
-						•Responded to outside inquires by telephone, email and in-person to offer information and
-						resolve basic questions.
-						•Assisted management with word processing, scanning and copying tasks.
-						•Provided information to students about policies, offices and staff members. </p>
-		
-					</article>
-			
-				
-				
-					
+      <!-- Contact -->
+      <article id="contact">
+        <h2 class="major">Contact</h2>
+        <div data-aos="zoom-in">
+          <p><strong>Email:</strong> <a href="mailto:reemsamymustafa@gmail.com">reemsamymustafa@gmail.com</a></p>
+          <p><strong>Phone:</strong> +20 1124422732</p>
+          <p><strong>Location:</strong> Maadi, Cairo, Egypt</p>
+          <ul class="icons">
+            <li><a href="https://github.com/ReemSamy" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/reemsamy" target="_blank">LinkedIn</a></li>
+            <li><a href="https://leetcode.com/Reem-Samy/" target="_blank">LeetCode</a></li>
+            <li><a href="https://www.hackerrank.com/reemsamy699" target="_blank">HackerRank</a></li>
+          </ul>
+        </div>
+      </article>
 
-		</div>
+    </div>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
-		</footer>
+    <!-- Footer -->
+    <footer id="footer"></footer>
+  </div>
 
-	</div>
+  <!-- BG -->
+  <div id="bg"></div>
 
-	<!-- BG -->
-	<div id="bg"></div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    var typed = new Typed(".typing", {
+      strings: ["Software Engineer", "Backend Developer","Full Stack Developer],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true
+    });
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+    window.addEventListener("scroll", () => {
+      document.querySelectorAll(".skills-bar-fill").forEach(bar => {
+        let value = bar.getAttribute("data-skill");
+        if (bar.getBoundingClientRect().top < window.innerHeight) {
+          bar.style.width = value + "%";
+        }
+      });
+    });
+  </script>
 </body>
-
 </html>
